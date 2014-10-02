@@ -12,7 +12,7 @@ public class LexAnalyzerTest {
 	
 	@Test
 	public void testDoAnalysis() {
-		analyzer.doAnalysis("26.663x9.99+655.2".toCharArray());
+		analyzer.doAnalysis("5.6x2.3/2+8.1".toCharArray());
 		ArrayList<String> tokens = new ArrayList<String>();
 		tokens = analyzer.getFinalTokens();
 		System.out.printf(tokens.toString());
